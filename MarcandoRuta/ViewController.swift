@@ -71,7 +71,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             let distance = ultimaLocation!.distanceFromLocation(initialLocation!)
             
             if distance >= 50{
-                distanciaRecorrida += 50
+                distanciaRecorrida += distance
                 
                 ultimaLocation = initialLocation
                 var punto = CLLocationCoordinate2D()
